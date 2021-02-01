@@ -3,11 +3,17 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+html {
+  font-size: 10px;
+  position: relative;
 }
+
+body {
+  position: absolute;
+  background: url('../assets/img/equalizer-153212_1280.png') bottom center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
