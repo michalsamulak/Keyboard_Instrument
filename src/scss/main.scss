@@ -17,3 +17,61 @@ body {
   font-family: sans-serif;
 }
 
+.keys {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  top: 30vh;
+
+  &-1 {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-2 {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+  &-3 {
+    display: flex;
+    flex: 1;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.letter {
+  border: 0.4rem solid rgba(105, 103, 103, 0.329);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.sound {
+  transform: scale(.8);
+  border-color: #34b84a;
+  box-shadow: 0 0 1rem #bba009;
+}
+
+.keyMark {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #e71212;
+}
