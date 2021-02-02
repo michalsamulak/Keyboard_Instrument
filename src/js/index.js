@@ -26,28 +26,27 @@ function removeEffect(e) {
 
   }
 
-  function loopPlaying(e) {
-    const muzyka = document.querySelector(`audio[data-letter="${e}"]`);
-    const klucz = document.querySelector(`div[data-letter="${e}"]`);
-    klucz.classList.add('sound');
-    muzyka.currentTime = 0;
-    muzyka.play();
-
+   function loopPlaying(e) {
+    const audioRep = document.querySelector(`audio[data-letter="${e}"]`);
+    const keyRep = document.querySelector(`div[data-letter="${e}"]`);
+    keyRep.classList.add('sound');
+    audioRep.currentTime = 0;
+    audioRep.play();
+    
 
   }
-
-
-
-
 
   window.addEventListener('keydown', musicPlay);
 
+
   const loopPlay = () => {
-    loop.forEach(el => loopPlaying(el));
-
+    loop.forEach(function(el, index) {
+      setTimeout(function(){
+        loopPlaying(el)
+      }, 500 * (index + 1));
+  });
+   
   }
-
-
 
   btnReplay.addEventListener('click', loopPlay);
   btnReset.addEventListener('click', () => {
