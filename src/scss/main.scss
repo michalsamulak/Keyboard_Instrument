@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
 }
 
 .keys {
@@ -74,4 +75,35 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #e71212;
+}
+
+.btn-container {
+  transition: translate 2s;
+}
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+    display: inline-block;
+    position: relative;
+    top: 80vh;
+    left: calc(50vw - 10.5rem);
+    color: #000;
+    background-image: linear-gradient(to bottom right,orange,pink);
+    background-color: #bba009;
+    border: none;
+    box-shadow: 0 0 1rem rgba(violet,.5);
+
+    &:hover {
+      transform: translateY(-.3rem) scale(1.03);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(.119rem) scale(1);
+  }
+
+
+
 }
